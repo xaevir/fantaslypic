@@ -1,0 +1,16 @@
+{{#user}}
+  {{!<li class="dropdown" id="user-dropdown">
+    <a href="#user-dropdown" class="dropdown-toggle" data-toggle="dropdown">{{username}}<b class="caret"></b></a>
+    <ul class="dropdown-menu nav nav-stacked">
+      <li><a href="/profile/{{slug}}">Profile</a></li>
+      <li><a href="#logout">Logout</a></li> 
+    </ul>
+  </li>
+  }}
+{{/user}}
+{{^user}}
+  {{!<li><a href="/signup">Sign Up</a></li>
+  <li><a href="/login">Login</a></li>
+  }}
+  <li><a href="/contact">Questions/Contact</a></li>
+{{/user}}

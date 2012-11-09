@@ -1,0 +1,14 @@
+{{#makeProfileLink}}
+  <b class="author"><a href="/profile/{{authorSlug}}" class="profile-link">{{author}}</a>:</b>
+{{/makeProfileLink}}
+{{^makeProfileLink}}
+  <b class="author">{{author}}:</b>
+{{/makeProfileLink}}
+
+<blockquote>
+{{{body}}} 
+</blockquote>
+<ul class="metadata">
+  <li class="sent">{{time}}</li>
+</ul>
+{{#edit}}<div class="extra-options"><a href="#" class="edit">edit</a></div>{{/edit}}
